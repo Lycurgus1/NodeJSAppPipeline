@@ -41,3 +41,44 @@ create repo
 	- push if build succeds
 	- merge results
 	- branches - master, origin (branch to push, target remote name)
+
+**webhook**
+- create webhook on github
+```http://jenkins.spartaglobal.academy:8080/github-webhook/```
+
+**test ci job**
+- set up branch
+- do a test commit to test
+
+## Continuous deployment set-up
+**enables auto tested code to go to another server and 
+
+**follow readme linked on trello**
+- in downlaods folder
+
+**buttons**
+- discard old builds
+- github project
+- sourcecode
+	- git
+	- use clone github link
+	- watch master branch
+- build triggers
+	- build after other projects arebuilt
+	- use name of ci job in projects to watch
+	- trigger only if build is stable
+- build
+	- execute shell
+ ```
+scp -o "StrictHostKeyChecking=no" app ubuntu@3.250.17.181:/home/ubuntu
+scp -o "StrictHostKeyChecking=no" environment ubuntu@3.250.17.181:/home/ubuntu
+ssh -o "StrictHostKeyChecking=no" ubuntu@3.250.17.181 <<EOF
+    sudo bash ./environment/app/provision.sh
+    cd app
+    pm2 kill
+    pm2 start app.js
+EOF
+```
+
+**problems**
+- make sure no apps are running else you may get port 3000 is already in use error
