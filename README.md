@@ -80,4 +80,4 @@ EOF
 ```
 
 **problems**
-- make sure no apps are running else you may get port 3000 is already in use error
+- make sure no apps are running else you may get "port 3000 is already in use" error
