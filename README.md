@@ -30,7 +30,7 @@ create repo
 	- sparta-ubuntu-node
 - source code managment
 	- git, use git@github from your github and credentials
-	- branches to build = */dev/
+	- branches to build = */dev*
 - provide node and npm folder
 	- leave defaults
 - build
