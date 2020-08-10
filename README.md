@@ -1,6 +1,5 @@
 # Creating CICD pipeline
 
-
 ## Continuous integration set-up
 **removing git remote**
 ```git remote --v``` gets current remote
