@@ -50,7 +50,8 @@ create repo
 - do a test commit to test
 
 ## Continuous deployment set-up
-**enables auto tested code to go to another server and 
+**enables auto tested code to go to another server and be deployed**
+- in this case the website being displayed
 
 **follow readme linked on trello**
 - in downlaods folder
@@ -66,6 +67,8 @@ create repo
 	- build after other projects arebuilt
 	- use name of ci job in projects to watch
 	- trigger only if build is stable
+- ssh agent
+	- add devops student
 - build
 	- execute shell
  ```
