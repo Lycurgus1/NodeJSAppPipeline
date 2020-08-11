@@ -68,6 +68,7 @@ create repo
 	- use name of ci job in projects to watch
 	- trigger only if build is stable
 - ssh agent
+	- specifict credentials
 	- add devops student
 - build
 	- execute shell
