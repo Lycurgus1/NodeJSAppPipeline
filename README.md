@@ -15,7 +15,7 @@ create repo
 ```git push -u origin master```
 -sets up remote to track master
 
-**set up jenkins job**
+## Set up jenkins job
 - create, name appropriate name
 - job function.name
 
