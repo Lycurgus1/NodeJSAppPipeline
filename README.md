@@ -19,7 +19,7 @@ create repo
 - create, name appropriate name
 - job function.name
 
-**buttons**
+### Other Options
 - discard old builds
 - github project 
 	- github url
