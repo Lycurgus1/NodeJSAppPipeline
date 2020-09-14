@@ -1,23 +1,28 @@
 # Creating CICD pipeline
 
+Steps to set up a CICD Pipeline using Jenkins
+
+In this case a server on AWS was used to host the Jenkins server
+
 ## Continuous integration set-up
-**removing git remote**
+
+**Removing git remote**
 ```git remote --v``` gets current remote
 ```git remote rm origin``` removes remote
 
-**create new repo**
+**Create new repo**
 create repo
 
-**add remote origin**
+**Add remote origin**
 ```git remote add origin git@github.com:Lycurgus1/NodeJSAppPipeline.git```
 
-**push to intialise**
+**Push to intialise**
 ```git push -u origin master```
--sets up remote to track master
+- Sets up remote to track master
 
 ## Set up jenkins job
-- create, name appropriate name
-- job function.name
+- Create, name appropriate name
+- Job function.name
 
 ### Other Options
 - discard old builds
@@ -83,5 +88,5 @@ ssh -o "StrictHostKeyChecking=no" ubuntu@3.250.17.181 <<EOF
 EOF
 ```
 
-**problems**
+**Potential errors**
 - make sure no apps are running else you may get "port 3000 is already in use" error
